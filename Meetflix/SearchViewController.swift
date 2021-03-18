@@ -72,9 +72,10 @@ class SearchAPI {
                 completion([])
                 return
             }
-            let text = String(data: resultData, encoding: .utf8)
+            // 확인코드
+//            let text = String(data: resultData, encoding: .utf8)
+//            print("String : \(text)")
 //            completion([Movie])
-            print("String : \(text)")
         }
         dataTask.resume()
         
