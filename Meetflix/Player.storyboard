@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="fsp-wO-ddn">
+            <objects>
+                <viewController storyboardIdentifier="PlayerViewController" id="ulo-n4-WcC" customClass="PlayerViewController" customModule="Meetflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Oz-ZK-GyA">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuQ-qN-Ite" customClass="PlayerView" customModule="Meetflix" customModuleProvider="target">
+                                <rect key="frame" x="44" y="0.0" width="808" height="414"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSh-CL-H8K">
+                                <rect key="frame" x="44" y="0.0" width="808" height="414"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3I-ot-aOE">
+                                        <rect key="frame" x="762" y="15" width="31" height="28"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" image="xmark.octagon" catalog="system">
+                                            <color key="titleColor" systemColor="systemGrayColor"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeButtonTapped:" destination="ulo-n4-WcC" eventType="touchUpInside" id="mbg-fd-YJX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzi-yU-ve2">
+                                        <rect key="frame" x="369" y="181" width="70" height="52"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" image="play.rectangle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                        </state>
+                                        <state key="selected" image="pause.rectangle" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="togglePlayButton:" destination="ulo-n4-WcC" eventType="touchUpInside" id="6HJ-bM-ScK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Z3I-ot-aOE" firstAttribute="top" secondItem="OSh-CL-H8K" secondAttribute="top" constant="15" id="MMc-GS-N1R"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z3I-ot-aOE" secondAttribute="trailing" constant="15" id="dyh-VR-KE1"/>
+                                    <constraint firstItem="nzi-yU-ve2" firstAttribute="centerX" secondItem="OSh-CL-H8K" secondAttribute="centerX" id="unk-4O-Kr6"/>
+                                    <constraint firstItem="nzi-yU-ve2" firstAttribute="centerY" secondItem="OSh-CL-H8K" secondAttribute="centerY" id="xrt-XK-GPI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CLF-y8-dhz"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CLF-y8-dhz" firstAttribute="trailing" secondItem="JuQ-qN-Ite" secondAttribute="trailing" id="1rY-EO-eOW"/>
+                            <constraint firstItem="OSh-CL-H8K" firstAttribute="leading" secondItem="JuQ-qN-Ite" secondAttribute="leading" id="B4d-uZ-nHG"/>
+                            <constraint firstItem="JuQ-qN-Ite" firstAttribute="leading" secondItem="CLF-y8-dhz" secondAttribute="leading" id="G6j-6y-e3w"/>
+                            <constraint firstAttribute="bottom" secondItem="JuQ-qN-Ite" secondAttribute="bottom" id="HOG-dS-sl9"/>
+                            <constraint firstItem="JuQ-qN-Ite" firstAttribute="top" secondItem="2Oz-ZK-GyA" secondAttribute="top" id="WrH-yA-1RR"/>
+                            <constraint firstItem="OSh-CL-H8K" firstAttribute="height" secondItem="JuQ-qN-Ite" secondAttribute="height" id="cZv-3h-jKN"/>
+                            <constraint firstItem="OSh-CL-H8K" firstAttribute="width" secondItem="JuQ-qN-Ite" secondAttribute="width" id="hyJ-Ld-2hA"/>
+                            <constraint firstItem="OSh-CL-H8K" firstAttribute="top" secondItem="JuQ-qN-Ite" secondAttribute="top" id="r5f-HE-cdu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="controllView" destination="OSh-CL-H8K" id="Znh-Tb-Mb6"/>
+                        <outlet property="playButton" destination="nzi-yU-ve2" id="9Ga-y3-TBS"/>
+                        <outlet property="playerView" destination="JuQ-qN-Ite" id="52J-9R-Wmb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMs-Xq-sev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.392857142857142" y="50.724637681159422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause.rectangle" catalog="system" width="128" height="93"/>
+        <image name="play.rectangle" catalog="system" width="128" height="93"/>
+        <image name="xmark.octagon" catalog="system" width="128" height="112"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -49,6 +49,21 @@ extension SearchViewController: UICollectionViewDataSource {
 }
 // 클릭시 처리
 extension SearchViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // movie item
+        let movie = movies[indexPath.item]
+        print("click : \(movie.title)")
+        // playerVC 제작
+        // playerVC + Movie
+        // PlayerVC 보여주기
+        
+        let sb = UIStoryboard(name: "Player", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "PlayerViewController") as! PlayerViewController
+        //모달창 말고 새창으로 뜨게 하는 부분
+        vc.modalPresentationStyle = .fullScreen
+        
+        present(vc, animated: false, completion: nil)
+    }
     
 }
 // 컬렉션뷰 크기 조정
