@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import AVFoundation
 
 class SearchViewController: UIViewController {
     
@@ -52,6 +53,10 @@ extension SearchViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // movie item
         let movie = movies[indexPath.item]
+        // 영상 item
+        let url = URL(string: movie.previewURL)!
+        let item = AVPlayerItem(url: url)
+        
         print("click : \(movie.title)")
         // playerVC 제작
         // playerVC + Movie
@@ -61,6 +66,8 @@ extension SearchViewController: UICollectionViewDelegate {
         let vc = sb.instantiateViewController(withIdentifier: "PlayerViewController") as! PlayerViewController
         //모달창 말고 새창으로 뜨게 하는 부분
         vc.modalPresentationStyle = .fullScreen
+        
+        vc.player.replaceCurrentItem(with: item)
         
         present(vc, animated: false, completion: nil)
     }

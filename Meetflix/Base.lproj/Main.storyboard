@@ -10,23 +10,69 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Meetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Home" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interstella" translatesAutoresizingMaskIntoConstraints="NO" id="Zpn-88-k60">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="473"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zpn-88-k60" secondAttribute="height" multiplier="7:8" id="L1U-9t-P1w"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dm-o2-hwS">
+                                <rect key="frame" x="45" y="457.5" width="34" height="31"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" image="plus.app.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXd-cm-tvU">
+                                <rect key="frame" x="334" y="456" width="35" height="34"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" image="info.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMJ-KQ-oEm">
+                                <rect key="frame" x="157" y="455" width="100" height="36"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="B7b-7Z-8Fv"/>
+                                    <constraint firstAttribute="height" constant="36" id="tR3-UI-hru"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title=" 바로재생" image="play.fill" catalog="system">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KMJ-KQ-oEm" firstAttribute="top" secondItem="Zpn-88-k60" secondAttribute="bottom" constant="-18" id="5Ws-Pt-Qon"/>
+                            <constraint firstAttribute="top" secondItem="Zpn-88-k60" secondAttribute="top" id="7hn-kR-GSP"/>
+                            <constraint firstItem="Zpn-88-k60" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FOf-QF-t0w"/>
+                            <constraint firstItem="BXd-cm-tvU" firstAttribute="centerY" secondItem="KMJ-KQ-oEm" secondAttribute="centerY" id="MXm-Xp-J6y"/>
+                            <constraint firstItem="0Dm-o2-hwS" firstAttribute="centerY" secondItem="KMJ-KQ-oEm" secondAttribute="centerY" id="V9E-rB-ey4"/>
+                            <constraint firstItem="KMJ-KQ-oEm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bze-gC-Re3"/>
+                            <constraint firstItem="Zpn-88-k60" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="er7-Sd-XlI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BXd-cm-tvU" secondAttribute="trailing" constant="45" id="pCg-zE-jWJ"/>
+                            <constraint firstItem="0Dm-o2-hwS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="tmJ-JP-aDl"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="otE-Ax-irF"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="otE-Ax-irF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2886" y="892"/>
+            <point key="canvasLocation" x="-2886.9565217391305" y="891.96428571428567"/>
         </scene>
-        <!--Item-->
+        <!--search-->
         <scene sceneID="bHe-HE-KpR">
             <objects>
                 <viewController id="oNP-5f-ZRR" customClass="SearchViewController" customModule="Meetflix" customModuleProvider="target" sceneMemberID="viewController">
@@ -92,7 +138,7 @@
                             <constraint firstItem="oVG-oG-j9B" firstAttribute="leading" secondItem="eiE-CV-3up" secondAttribute="leading" id="u0G-c4-wFT"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="sNR-nn-Css"/>
+                    <tabBarItem key="tabBarItem" title="search" image="magnifyingglass" catalog="system" id="sNR-nn-Css"/>
                     <connections>
                         <outlet property="resultCollectionView" destination="oVG-oG-j9B" id="J2G-aA-vrJ"/>
                         <outlet property="searchBar" destination="hKg-4z-1Hl" id="Lpu-92-TYJ"/>
@@ -102,7 +148,7 @@
             </objects>
             <point key="canvasLocation" x="-2097.1014492753625" y="891.96428571428567"/>
         </scene>
-        <!--Item 2-->
+        <!--Soon-->
         <scene sceneID="UZM-gS-1of">
             <objects>
                 <viewController id="mEE-Qt-x8U" sceneMemberID="viewController">
@@ -112,13 +158,13 @@
                         <viewLayoutGuide key="safeArea" id="yCw-eN-Ell"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Qgw-fA-uFJ"/>
+                    <tabBarItem key="tabBarItem" title="Soon" image="play.rectangle.fill" catalog="system" id="Qgw-fA-uFJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDq-kG-V4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1290" y="874"/>
         </scene>
-        <!--Item 1-->
+        <!--Download-->
         <scene sceneID="lg1-Vg-hNd">
             <objects>
                 <viewController id="lML-gg-YRR" sceneMemberID="viewController">
@@ -128,7 +174,7 @@
                         <viewLayoutGuide key="safeArea" id="JjC-qb-18W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Iq5-Zs-es5"/>
+                    <tabBarItem key="tabBarItem" title="Download" image="tray.and.arrow.down.fill" catalog="system" id="Iq5-Zs-es5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozD-oF-cTC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,7 +201,7 @@
             </objects>
             <point key="canvasLocation" x="-945" y="47"/>
         </scene>
-        <!--Item-->
+        <!--Setting-->
         <scene sceneID="csK-kN-nTE">
             <objects>
                 <viewController id="VGd-Wd-JrL" sceneMemberID="viewController">
@@ -165,7 +211,7 @@
                         <viewLayoutGuide key="safeArea" id="R6g-aK-Thj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="huI-Vd-5hK"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="gearshape.2" catalog="system" id="huI-Vd-5hK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sje-gF-662" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,8 +219,23 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape.2" catalog="system" width="128" height="100"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="interstella" width="500" height="716.5"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="play.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+        <image name="tray.and.arrow.down.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
