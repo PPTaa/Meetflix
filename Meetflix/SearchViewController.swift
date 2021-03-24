@@ -108,7 +108,7 @@ extension SearchViewController: UISearchBarDelegate {
         // > 검색 API 필요 > SearchAPI
         // > 검색 결과를 받아올 모델 Movie, Response > struct 구성
         // > 결과를 받아와서 CollectionView 로 표현
-        
+        print("searchTerm : \(searchTerm)")
         SearchAPI.search(searchTerm) { movies in
             // collectionView로 표현하기
             print("count data : \(movies.count)")
@@ -135,9 +135,11 @@ class SearchAPI {
         let mediaQuery = URLQueryItem(name: "media", value: "movie")
         let entityQuery = URLQueryItem(name: "entity", value: "movie")
         let termQuery = URLQueryItem(name: "term", value: term)
+        let limitQuery = URLQueryItem(name: "limit", value: "200")
         urlComponents.queryItems?.append(mediaQuery)
         urlComponents.queryItems?.append(entityQuery)
         urlComponents.queryItems?.append(termQuery)
+        urlComponents.queryItems?.append(limitQuery)
         let requestURL = urlComponents.url!
         
         let dataTask = session.dataTask(with: requestURL) { data, response, error in
