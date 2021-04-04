@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7C2595062604E4AF006ACFAF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7C2595052604E4AF006ACFAF /* Kingfisher */; };
+		7C93BE9D2619E85B00E8AFAB /* RecommendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93BE9C2619E85B00E8AFAB /* RecommendListViewController.swift */; };
+		7C93BEA42619EC0A00E8AFAB /* SoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93BEA32619EC0A00E8AFAB /* SoonViewController.swift */; };
 		7CD1080F2608BA27006D9B97 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1080E2608BA27006D9B97 /* Player.storyboard */; };
 		7CD108122608BA50006D9B97 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD108112608BA50006D9B97 /* PlayerViewController.swift */; };
 		7CD108162608C0C2006D9B97 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD108152608C0C2006D9B97 /* PlayerView.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C93BE9C2619E85B00E8AFAB /* RecommendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendListViewController.swift; sourceTree = "<group>"; };
+		7C93BEA32619EC0A00E8AFAB /* SoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoonViewController.swift; sourceTree = "<group>"; };
 		7CD1080E2608BA27006D9B97 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
 		7CD108112608BA50006D9B97 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerViewController.swift; path = ../../../Desktop/PlayerViewController.swift; sourceTree = "<group>"; };
 		7CD108152608C0C2006D9B97 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				7CD108112608BA50006D9B97 /* PlayerViewController.swift */,
 				7CD108152608C0C2006D9B97 /* PlayerView.swift */,
 				7CED0C862603666400E06325 /* Assets.xcassets */,
+				7C93BE9C2619E85B00E8AFAB /* RecommendListViewController.swift */,
+				7C93BEA32619EC0A00E8AFAB /* SoonViewController.swift */,
 			);
 			path = Meetflix;
 			sourceTree = "<group>";
@@ -164,9 +170,11 @@
 				7CED0C822603666300E06325 /* MeetfilxTabbarViewController.swift in Sources */,
 				7CED0C7E2603666300E06325 /* AppDelegate.swift in Sources */,
 				7CED0C9526036A4700E06325 /* SearchViewController.swift in Sources */,
+				7C93BE9D2619E85B00E8AFAB /* RecommendListViewController.swift in Sources */,
 				7CD108162608C0C2006D9B97 /* PlayerView.swift in Sources */,
 				7CED0C802603666300E06325 /* SceneDelegate.swift in Sources */,
 				7CD6C284260B3BB3001DC64D /* HomeViewController.swift in Sources */,
+				7C93BEA42619EC0A00E8AFAB /* SoonViewController.swift in Sources */,
 				7CD108122608BA50006D9B97 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
