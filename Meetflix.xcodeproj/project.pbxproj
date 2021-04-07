@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C2595062604E4AF006ACFAF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7C2595052604E4AF006ACFAF /* Kingfisher */; };
+		7C2595062604E4AF006ACFAF /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 7C2595052604E4AF006ACFAF /* SwiftPackageProductDependency */; };
 		7C93BE9D2619E85B00E8AFAB /* RecommendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93BE9C2619E85B00E8AFAB /* RecommendListViewController.swift */; };
 		7C93BEA42619EC0A00E8AFAB /* SoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C93BEA32619EC0A00E8AFAB /* SoonViewController.swift */; };
+		7CC33848261D9F77006CCDB9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CC33847261D9F77006CCDB9 /* GoogleService-Info.plist */; };
 		7CD1080F2608BA27006D9B97 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1080E2608BA27006D9B97 /* Player.storyboard */; };
 		7CD108122608BA50006D9B97 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD108112608BA50006D9B97 /* PlayerViewController.swift */; };
 		7CD108162608C0C2006D9B97 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD108152608C0C2006D9B97 /* PlayerView.swift */; };
@@ -21,11 +22,14 @@
 		7CED0C872603666400E06325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CED0C862603666400E06325 /* Assets.xcassets */; };
 		7CED0C8A2603666400E06325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CED0C882603666400E06325 /* LaunchScreen.storyboard */; };
 		7CED0C9526036A4700E06325 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED0C9426036A4700E06325 /* SearchViewController.swift */; };
+		E8869D4BD495080D6DC27337 /* Pods_Meetflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D8842FD0CEC124CB1DAEF5 /* Pods_Meetflix.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F341775D3A821C56DC2132A /* Pods-Meetflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meetflix.release.xcconfig"; path = "Target Support Files/Pods-Meetflix/Pods-Meetflix.release.xcconfig"; sourceTree = "<group>"; };
 		7C93BE9C2619E85B00E8AFAB /* RecommendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendListViewController.swift; sourceTree = "<group>"; };
 		7C93BEA32619EC0A00E8AFAB /* SoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoonViewController.swift; sourceTree = "<group>"; };
+		7CC33847261D9F77006CCDB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7CD1080E2608BA27006D9B97 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
 		7CD108112608BA50006D9B97 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerViewController.swift; path = ../../../Desktop/PlayerViewController.swift; sourceTree = "<group>"; };
 		7CD108152608C0C2006D9B97 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
@@ -39,6 +43,8 @@
 		7CED0C892603666400E06325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CED0C8B2603666400E06325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CED0C9426036A4700E06325 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CC2D17F72918BF059DE63033 /* Pods-Meetflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meetflix.debug.xcconfig"; path = "Target Support Files/Pods-Meetflix/Pods-Meetflix.debug.xcconfig"; sourceTree = "<group>"; };
+		D0D8842FD0CEC124CB1DAEF5 /* Pods_Meetflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meetflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,18 +52,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C2595062604E4AF006ACFAF /* Kingfisher in Frameworks */,
+				7C2595062604E4AF006ACFAF /* BuildFile in Frameworks */,
+				E8869D4BD495080D6DC27337 /* Pods_Meetflix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C6DA071668AC36DD4DFA83D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC2D17F72918BF059DE63033 /* Pods-Meetflix.debug.xcconfig */,
+				5F341775D3A821C56DC2132A /* Pods-Meetflix.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7CED0C712603666300E06325 = {
 			isa = PBXGroup;
 			children = (
 				7CED0C7C2603666300E06325 /* Meetflix */,
 				7CED0C7B2603666300E06325 /* Products */,
+				3C6DA071668AC36DD4DFA83D /* Pods */,
+				7D8DE55448FF70B4CE08A607 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,8 +105,17 @@
 				7CED0C862603666400E06325 /* Assets.xcassets */,
 				7CED0C882603666400E06325 /* LaunchScreen.storyboard */,
 				7CED0C8B2603666400E06325 /* Info.plist */,
+				7CC33847261D9F77006CCDB9 /* GoogleService-Info.plist */,
 			);
 			path = Meetflix;
+			sourceTree = "<group>";
+		};
+		7D8DE55448FF70B4CE08A607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8842FD0CEC124CB1DAEF5 /* Pods_Meetflix.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CED0C8E2603666400E06325 /* Build configuration list for PBXNativeTarget "Meetflix" */;
 			buildPhases = (
+				545C93EAB234CBBEDCB5CB00 /* [CP] Check Pods Manifest.lock */,
 				7CED0C762603666300E06325 /* Sources */,
 				7CED0C772603666300E06325 /* Frameworks */,
 				7CED0C782603666300E06325 /* Resources */,
+				B5540E040E2F5BC674EA68B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,7 +137,7 @@
 			);
 			name = Meetflix;
 			packageProductDependencies = (
-				7C2595052604E4AF006ACFAF /* Kingfisher */,
+				7C2595052604E4AF006ACFAF /* SwiftPackageProductDependency */,
 			);
 			productName = Meetflix;
 			productReference = 7CED0C7A2603666300E06325 /* Meetflix.app */;
@@ -137,7 +167,7 @@
 			);
 			mainGroup = 7CED0C712603666300E06325;
 			packageReferences = (
-				7C2595042604E4AF006ACFAF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				7C2595042604E4AF006ACFAF /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 7CED0C7B2603666300E06325 /* Products */;
 			projectDirPath = "";
@@ -155,12 +185,55 @@
 			files = (
 				7CED0C8A2603666400E06325 /* LaunchScreen.storyboard in Resources */,
 				7CD1080F2608BA27006D9B97 /* Player.storyboard in Resources */,
+				7CC33848261D9F77006CCDB9 /* GoogleService-Info.plist in Resources */,
 				7CED0C872603666400E06325 /* Assets.xcassets in Resources */,
 				7CED0C852603666300E06325 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		545C93EAB234CBBEDCB5CB00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meetflix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5540E040E2F5BC674EA68B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meetflix/Pods-Meetflix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meetflix/Pods-Meetflix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meetflix/Pods-Meetflix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CED0C762603666300E06325 /* Sources */ = {
@@ -319,6 +392,7 @@
 		};
 		7CED0C8F2603666400E06325 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC2D17F72918BF059DE63033 /* Pods-Meetflix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -339,6 +413,7 @@
 		};
 		7CED0C902603666400E06325 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F341775D3A821C56DC2132A /* Pods-Meetflix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,7 +456,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7C2595042604E4AF006ACFAF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		7C2595042604E4AF006ACFAF /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
@@ -392,9 +467,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7C2595052604E4AF006ACFAF /* Kingfisher */ = {
+		7C2595052604E4AF006ACFAF /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7C2595042604E4AF006ACFAF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 7C2595042604E4AF006ACFAF /* RemoteSwiftPackageReference */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */

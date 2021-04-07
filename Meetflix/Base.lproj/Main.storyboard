@@ -275,17 +275,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1600"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interstella" translatesAutoresizingMaskIntoConstraints="NO" id="7r0-Rg-oOp">
-                                                <rect key="frame" x="16" y="20" width="382" height="300"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="bmv-fh-HhT"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="086-1J-eno">
-                                                <rect key="frame" x="16" y="328" width="382" height="400"/>
+                                                <rect key="frame" x="0.0" y="300" width="414" height="400"/>
                                                 <subviews>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Auv-on-QcY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="JOo-Kp-gzf"/>
                                                         </constraints>
@@ -294,7 +294,7 @@
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkE-C5-RYg">
-                                                        <rect key="frame" x="0.0" y="200" width="382" height="200"/>
+                                                        <rect key="frame" x="0.0" y="200" width="414" height="200"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="aGd-KT-Fc3"/>
                                                         </constraints>
@@ -307,12 +307,12 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="086-1J-eno" firstAttribute="top" secondItem="7r0-Rg-oOp" secondAttribute="bottom" constant="8" id="2cU-d7-epU"/>
-                                            <constraint firstAttribute="trailing" secondItem="7r0-Rg-oOp" secondAttribute="trailing" constant="16" id="D0s-vS-4x8"/>
-                                            <constraint firstItem="086-1J-eno" firstAttribute="leading" secondItem="O1L-Z7-rcD" secondAttribute="leading" constant="16" id="JEq-Gd-CtB"/>
-                                            <constraint firstItem="7r0-Rg-oOp" firstAttribute="leading" secondItem="O1L-Z7-rcD" secondAttribute="leading" constant="16" id="NYX-aU-Owe"/>
-                                            <constraint firstItem="7r0-Rg-oOp" firstAttribute="top" secondItem="O1L-Z7-rcD" secondAttribute="top" constant="20" id="gGq-Cq-qCl"/>
-                                            <constraint firstAttribute="trailing" secondItem="086-1J-eno" secondAttribute="trailing" constant="16" id="lvv-v5-Pa7"/>
+                                            <constraint firstItem="086-1J-eno" firstAttribute="top" secondItem="7r0-Rg-oOp" secondAttribute="bottom" id="2cU-d7-epU"/>
+                                            <constraint firstAttribute="trailing" secondItem="7r0-Rg-oOp" secondAttribute="trailing" id="D0s-vS-4x8"/>
+                                            <constraint firstItem="086-1J-eno" firstAttribute="leading" secondItem="O1L-Z7-rcD" secondAttribute="leading" id="JEq-Gd-CtB"/>
+                                            <constraint firstItem="7r0-Rg-oOp" firstAttribute="leading" secondItem="O1L-Z7-rcD" secondAttribute="leading" id="NYX-aU-Owe"/>
+                                            <constraint firstItem="7r0-Rg-oOp" firstAttribute="top" secondItem="O1L-Z7-rcD" secondAttribute="top" id="gGq-Cq-qCl"/>
+                                            <constraint firstAttribute="trailing" secondItem="086-1J-eno" secondAttribute="trailing" id="lvv-v5-Pa7"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -400,7 +400,7 @@
             <objects>
                 <viewController id="nn6-cx-Wg5" customClass="RecommendListViewController" customModule="Meetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ytf-UZ-sjv">
-                        <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1번 추천 리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3w-3w-vcd">
@@ -410,7 +410,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FP6-Ha-gr7">
-                                <rect key="frame" x="0.0" y="35" width="382" height="160"/>
+                                <rect key="frame" x="0.0" y="35" width="414" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="GXb-cq-Kea"/>
                                 </constraints>
@@ -477,7 +477,7 @@
             <objects>
                 <viewController id="CjS-Pt-Jld" customClass="RecommendListViewController" customModule="Meetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bgl-F1-eOj">
-                        <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2번 추천 리스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0j-fG-5fh">
@@ -487,7 +487,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pe4-Ej-nWT">
-                                <rect key="frame" x="0.0" y="35" width="382" height="160"/>
+                                <rect key="frame" x="0.0" y="35" width="414" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="RlZ-hK-crA"/>
                                 </constraints>

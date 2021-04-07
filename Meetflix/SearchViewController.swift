@@ -8,6 +8,7 @@
 import UIKit
 import Kingfisher
 import AVFoundation
+import Firebase
 
 class SearchViewController: UIViewController {
     
@@ -15,6 +16,8 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var resultCollectionView: UICollectionView!
     
     var movies: [Movie] = []
+    var ref: DatabaseReference! = Database.database().reference()
+    var searchCount:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +48,6 @@ extension SearchViewController: UICollectionViewDataSource {
 //        cell.backgroundColor = .green
         return cell
     }
-    
-    
 }
 // 클릭시 처리
 extension SearchViewController: UICollectionViewDelegate {
@@ -95,7 +96,6 @@ extension SearchViewController: UISearchBarDelegate {
     private func dismissKeyboard(){
         searchBar.resignFirstResponder()
     }
-    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         // 검색 버튼 클릭 시작
         
@@ -113,6 +113,8 @@ extension SearchViewController: UISearchBarDelegate {
             // collectionView로 표현하기
             print("count data : \(movies.count)")
             print("data title : \(movies.first?.title)")
+            let timestamp: Double = Date().timeIntervalSince1970.rounded()
+            self.ref.child("searchLog").childByAutoId().setValue(["searchText" : searchTerm, "timeStamp":timestamp])
 //            이곳은 main thread가 아니기 때문에 뷰를 리로딩 하는 것은 메인에서 해야하만 에러가 나지 않음
 //            self.movies = movies
 //            self.resultCollectionView.reloadData()
@@ -123,6 +125,9 @@ extension SearchViewController: UISearchBarDelegate {
         }
         
         print("검색어 : \(searchBar.text!)")
+        
+//        self.ref.child("searchLog").setValue(searchBar.text!, forKey: "aaa")
+
     }
 }
 
